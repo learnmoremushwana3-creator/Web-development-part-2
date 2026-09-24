@@ -11,3 +11,355 @@ p{
     font-family: 'Courier New', Courier, monospace;
     
 }
+/* =========================
+   CSS RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 5%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #e67e22;
+    border-radius: 5px;
+}
+
+nav a:focus {
+    outline: 2px solid white;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    background-image: url("assets/braai masters.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   CONTENT GRID
+========================= */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #c0392b;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.price {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #e67e22;
+    outline: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #e67e22;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 92%;
+        padding: 25px 0;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 25px;
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
