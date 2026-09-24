@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Braai Masters</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Braai Masters</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section>
+            <h2>Contact Braai Masters</h2>
+
+            <p>
+                We would love to hear from you. Contact Braai Masters
+                for food orders, catering services, events and enquiries.
+            </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="content-grid">
+
+            <div class="card">
+                <h3>Contact Information</h3>
+
+                <p><strong>Business:</strong> Braai Masters</p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:+27000000000">+27 00 000 0000</a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@braaimasters.co.za">
+                        info@braaimasters.co.za
+                    </a>
+                </p>
+
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/27000000000">
+                        Contact us on WhatsApp
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    South Africa
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Opening Hours</h3>
+
+                <p>Monday - Friday: 09:00 - 20:00</p>
+                <p>Saturday: 09:00 - 21:00</p>
+                <p>Sunday: 10:00 - 18:00</p>
+            </div>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+                <label for="service">Service Required</label>
+
+                <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="food-order">Food Order</option>
+                    <option value="catering">Catering</option>
+                    <option value="family-event">Family Event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="year-end">Year-End Function</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Braai Masters. All Rights Reserved.</p>
+
+        <p>
+            Follow us on
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
