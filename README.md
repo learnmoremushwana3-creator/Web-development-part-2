@@ -8,4 +8,8 @@ Added a CSS reset to improve consistency between browsers.
 Updated the typography using font-family, font-size, font-weight and line-height.
 Added Flexbox navigation for improved page layout.
 Added CSS Grid to organise menu items and content sections.
-images sourced from the internet
+added menu.js 
+added menu search field for customers to find meals
+added a reset button to restore the original menu
+update the style.css
+
