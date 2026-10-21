@@ -425,5 +425,134 @@ footer a {
         box-sizing: border-box;
     }
 }
-```
+
+/* Enquiry page introduction */
+.enquiry-intro {
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.enquiry-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.enquiry-intro p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* Enquiry form section */
+.enquiry-section {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 25px;
+}
+
+/* Enquiry form layout */
+#enquiryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Form labels */
+#enquiryForm label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Form fields */
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+/* Highlight the field being used */
+#enquiryForm input:focus,
+#enquiryForm select:focus,
+#enquiryForm textarea:focus {
+    outline: 2px solid #b45309;
+    border-color: #b45309;
+}
+
+/* Form buttons */
+#enquiryForm button {
+    padding: 12px 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b4513;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+#enquiryForm button:hover {
+    background-color: #5c2e0b;
+}
+
+/* Error feedback */
+#enquiryError {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+/* Success feedback */
+#enquirySuccess {
+    color: #166534;
+    font-weight: bold;
+}
+
+/* Additional information */
+.enquiry-info {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+.enquiry-info li {
+    margin-bottom: 8px;
+}
+
+/* Responsive design for mobile phones */
+@media screen and (max-width: 600px) {
+
+    .enquiry-intro {
+        padding: 20px 15px;
+    }
+
+    .enquiry-section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #enquiryForm {
+        padding: 18px;
+    }
+
+    .enquiry-info {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #enquiryForm button {
+        width: 100%;
+    }
+}
 

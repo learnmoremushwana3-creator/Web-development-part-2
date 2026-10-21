@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make an Enquiry | Braai Masters</title>
+
+    <meta name="description"
+        content="Contact Braai Masters for catering, food orders, weddings, family events and special occasions in South Africa.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="enquiry.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Braai Masters</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Enquiry Introduction -->
+    <main>
+        <section class="enquiry-intro">
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Planning a family gathering, wedding, birthday or corporate event?
+                Braai Masters is here to help!
+            </p>
+
+            <p>
+                Complete the form below and tell us what you need.
+                We will use your details to prepare your enquiry.
+            </p>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-section">
+            <h2>Enquiry Form</h2>
+
+            <form id="enquiryForm">
+
+                <label for="customerName">Full Name:</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    name="customerName"
+                    minlength="2"
+                    maxlength="80"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="customerEmail">Email Address:</label>
+                <input
+                    type="email"
+                    id="customerEmail"
+                    name="customerEmail"
+                    maxlength="254"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="customerPhone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    name="customerPhone"
+                    placeholder="e.g. 082 123 4567"
+                    autocomplete="tel"
+                    pattern="(\+27|0)[0-9 ]{9,13}"
+                    title="Enter a South African number starting with 0 or +27."
+                    required
+                >
+
+                <label for="enquiryType">Type of Enquiry:</label>
+                <select id="enquiryType" name="enquiryType" required>
+                    <option value="">-- Select an enquiry type --</option>
+                    <option value="Food Order">Food Order</option>
+                    <option value="Catering">Catering</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday Party">Birthday Party</option>
+                    <option value="Family Gathering">Family Gathering</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="eventDate">Preferred Event Date:</label>
+                <input
+                    type="date"
+                    id="eventDate"
+                    name="eventDate"
+                >
+
+                <label for="guestCount">Number of Guests:</label>
+                <input
+                    type="number"
+                    id="guestCount"
+                    name="guestCount"
+                    min="1"
+                    max="10000"
+                    placeholder="Enter number of guests"
+                >
+
+                <label for="budget">Estimated Budget (R):</label>
+                <input
+                    type="number"
+                    id="budget"
+                    name="budget"
+                    min="0"
+                    step="0.01"
+                    placeholder="e.g. 2500"
+                >
+
+                <label for="enquiryMessage">Additional Information:</label>
+                <textarea
+                    id="enquiryMessage"
+                    name="enquiryMessage"
+                    rows="6"
+                    minlength="10"
+                    maxlength="2000"
+                    placeholder="Tell us about your event, food requirements or special requests."
+                    required
+                ></textarea>
+
+                <!-- Validation messages appear here -->
+                <p
+                    id="enquiryError"
+                    class="form-message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+                <!-- Submission feedback appears here -->
+                <p
+                    id="enquirySuccess"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+                <button type="submit">Prepare Enquiry</button>
+
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="enquiry-info">
+            <h2>Why Choose Braai Masters?</h2>
+
+            <ul>
+                <li>Traditional South African braai meals.</li>
+                <li>Food options for different occasions.</li>
+                <li>Catering enquiries for private and corporate events.</li>
+                <li>Personalised assistance with your requirements.</li>
+            </ul>
+
+            <p>
+                Need to contact us directly?
+                Visit our <a href="contact.html">Contact Us page</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Braai Masters. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
