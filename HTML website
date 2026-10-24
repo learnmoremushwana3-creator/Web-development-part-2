@@ -1,27 +1,22 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Menu - Braai Masters</title>
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
 
         <h1>Braai Masters</h1>
 
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -34,10 +29,8 @@
     </header>
 
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Page Introduction -->
         <section class="hero">
 
             <div class="hero-content">
@@ -54,7 +47,6 @@
         </section>
 
 
-        <!-- Protein Section -->
         <section>
 
             <h2>Protein</h2>
@@ -165,7 +157,6 @@
         </section>
 
 
-        <!-- Starch Section -->
         <section>
 
             <h2>Starch</h2>
@@ -226,7 +217,6 @@
         </section>
 
 
-        <!-- Vegetable Section -->
         <section>
 
             <h2>Vegetable Sides</h2>
@@ -317,7 +307,6 @@
         </section>
 
 
-        <!-- Catering Section -->
         <section class="card">
 
             <h2>Catering Services</h2>
@@ -342,7 +331,6 @@
     </main>
 
 
-    <!-- Footer -->
     <footer>
 
         <p>
@@ -360,4 +348,3 @@
 </body>
 
 </html>
-```

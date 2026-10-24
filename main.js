@@ -1,25 +1,10 @@
-// ========================================
-// BRAAI MASTERS - MAIN JAVASCRIPT
-// ========================================
-
-
-// Run the code after the HTML page has loaded
 document.addEventListener("DOMContentLoaded", function () {
-
-    // ========================================
-    // 1. AUTOMATIC COPYRIGHT YEAR
-    // ========================================
 
     const copyrightYear = document.getElementById("copyrightYear");
 
     if (copyrightYear) {
         copyrightYear.textContent = new Date().getFullYear();
     }
-
-
-    // ========================================
-    // 2. SMOOTH SCROLLING
-    // ========================================
 
     const internalLinks = document.querySelectorAll(
         'a[href^="#"]'
@@ -31,14 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const targetId = link.getAttribute("href");
 
-            // Ignore empty links
             if (!targetId || targetId === "#") {
                 return;
             }
 
             const targetElement = document.querySelector(targetId);
 
-            // Scroll only when the target exists
             if (targetElement) {
                 event.preventDefault();
 
@@ -51,11 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-
-
-    // ========================================
-    // 3. MOBILE NAVIGATION
-    // ========================================
 
     const menuToggle = document.getElementById("menuToggle");
     const mainNavigation = document.getElementById("mainNavigation");
@@ -76,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
-        // Close the mobile menu after choosing a link
+    
         const navigationLinks =
             mainNavigation.querySelectorAll("a");
 
@@ -97,17 +75,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
-    // ========================================
-    // 4. BACK-TO-TOP BUTTON
-    // ========================================
-
     const backToTopButton =
         document.getElementById("backToTop");
 
     if (backToTopButton) {
 
-        // Show the button after scrolling down
         window.addEventListener("scroll", function () {
 
             if (window.scrollY > 300) {
@@ -118,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
-        // Return to the top when clicked
         backToTopButton.addEventListener("click", function () {
 
             window.scrollTo({
@@ -129,11 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-
-
-    // ========================================
-    // 5. CURRENT PAGE NAVIGATION
-    // ========================================
 
     const currentPage =
         window.location.pathname.split("/").pop() || "index.html";

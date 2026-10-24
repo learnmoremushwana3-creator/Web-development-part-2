@@ -14,3 +14,5 @@ added a reset button to restore the original menu
 update the style.css
 updated style.css to accomodate the enquiry.js file to validate the customers information
 added The enquiry form to validate customer contact details and event information. It checks the selected enquiry type, guest count, budget, and message before preparing an email.
+Added main.js to handle general website interactions, including mobile navigation, smooth scrolling, and updating.
+website is running 
