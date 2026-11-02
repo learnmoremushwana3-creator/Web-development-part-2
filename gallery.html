@@ -54,6 +54,7 @@
                     src="assets/steak.jpg"
                     alt="Grilled steak prepared in traditional braai style"
                     loading="lazy"
+                    tab index="0"
                 >
                 <figcaption>Grilled Steak</figcaption>
             </figure>
@@ -135,6 +136,29 @@
             Braai Masters. All rights reserved.
         </p>
     </footer>
+
+<div
+    id="lightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Enlarged food image"
+    aria-hidden="true"
+    hidden
+>
+    <button
+        id="closeLightbox"
+        class="lightbox-close"
+        type="button"
+        aria-label="Close enlarged image"
+    >
+        &times;
+    </button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <p id="lightboxCaption"></p>
+</div>
 
 </body>
 </html>

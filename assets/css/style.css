@@ -592,3 +592,90 @@ footer a {
     }
 }
 
+.lightbox[hidden] {
+    display: none !important;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px 20px;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+#lightboxImage {
+    display: block;
+
+    max-width: 90%;
+    max-height: 75vh;
+
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#lightboxCaption {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #8b4513;
+    color: white;
+
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    background-color: #b45309;
+}
+
+.lightbox-close:focus-visible,
+.gallery-image:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 4px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .lightbox {
+        padding: 55px 10px 15px;
+    }
+
+    #lightboxImage {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+
+    #lightboxCaption {
+        font-size: 16px;
+    }
+
+    .lightbox-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
